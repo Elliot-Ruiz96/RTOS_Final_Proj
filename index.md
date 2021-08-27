@@ -65,13 +65,15 @@ Línea 175 - Línea 246:  Funcionamiento de toda la tarea de segundos;
                         
 Línea 148 - Línea 293:  Funcionamiento de la impresión del reloj digital;
                         Se tendran 9 valores en un solo arreglo para mostrar los 6 números, los dos puntos y uno adicional en la última posición
+                        Todas las actualizaciones se toman e imprimen en esta misma tarea.
                         
 Línea 295 - Línea 316:  Conversión de entero a ASCII;
                         Recordar que un char es solo un entero sin signo
+                        A cada uno de los resultados del módulo se le suma un 48 para hacer la conversión desde el número 0.
                         Se toma la siguiente tabla para generar la conversión:
                         
 ![3](https://user-images.githubusercontent.com/78750648/131067708-17735ea8-e202-47d1-ad0b-44b4f5cfe3cb.JPG)
-
+       
 ### *2.5 RTOS_FProject.h*
 
 Línea 24 - Línea 39: Definimos MACRSO para los bits, inicialización del reloj, config de la alarma y el "tiempo en que prende y apaga la pantalla"
@@ -92,7 +94,7 @@ Son los archivos utilziados originalmente, no hay cambios importantes en este he
 
 ## **4. Conclusiones**
 
-Este proyecto da una idea muy básica de como funcionan estos códigos en las aplicaciones reales. Algo muy importante por mencionar es que siempre habrán defectos, pero estos siempre se podrán minimizar conforme el usuario/desarrollador vaya tomando experiencia y se usen metodologías buenas para el diseño junto conm metodologías de calidad.
+Este proyecto da una idea muy básica de como funcionan estos códigos en las aplicaciones reales. Algo muy importante por mencionar es que siempre habrán defectos, pero estos siempre se podrán minimizar conforme el usuario/desarrollador vaya tomando experiencia y se usen metodologías buenas para el diseño junto con metodologías de calidad.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
