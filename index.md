@@ -36,15 +36,11 @@ Línea 89 - Línea 97: Creación de la tarea Idle junto con las otras 5, ademas 
 
 Últimas líneas de código: Apagado y encendido de la luz de fondo de la pantalla.
 
-### *2.2 freertos_spi.c*
+### *2.2 freertos_spi.c y freertos_spi.h*
 
+Son los archivos utilziados originalmente, no hay cambios importantes en este header ni source.
 
-
-### *2.3 freertos_spi.h*
-
-
-
-### *2.4 RTOS_FProject.c*
+### *2.3 RTOS_FProject.c*
 
 Línea 45 - Línea 92:  Funcionamiento de toda la tarea de segundos;
                       Pone la base de tiempo para la ejecución de todo el proyecto, para el funcaionamiento del semáforo entre horas, mins y segs.
