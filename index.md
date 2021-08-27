@@ -1,6 +1,6 @@
 # **RTOS Final Project: Clock**
 
-Hernández-Romero B. Ruiz-Sánchez E.
+Hernández-Romero B. (PADTS 14) Ruiz-Sánchez E (PADTS 8).
 
 **Centro de Investigación y de Estudios Avanzados del IPN. Zapopán, Jal, México.**
 
