@@ -98,7 +98,8 @@ int main(void) {
     /* Force the counter to be placed into memory. */
     volatile static uint32_t i = 0 ;
 
-    while(1) {
+    while(1)
+    {
     	nokiaLCD_backlight(1);
 		for(i = 0; i < 65535; i++){}
 		nokiaLCD_backlight(0);
