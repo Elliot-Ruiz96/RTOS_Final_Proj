@@ -87,7 +87,7 @@ void seconds_task (void* pvParameters)
 		// Perform action here. xWasDelayed value can be used to determine
 		// whether a deadline was missed if the code here took too long.
 //		xWasDelayed = xTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));
-		xTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));
+		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));
 	}
 }
 
@@ -238,7 +238,7 @@ void alarm_task (void* pvParameters)
 					{
 						alarmCounter++;
 					}
-					xTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));
+					vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));
 				}
 			}
 		}
