@@ -12,9 +12,9 @@ Hernández-Romero B. Ruiz-Sánchez E.
 
 El codigo fue generado con la herramienta MCUxpreso IDE v.11.3.1 para la tarjeta de desarrollo Freedoom Development Board K64 kinetis. El proyecto consiste en un relog digital, al cual se le puede programar una alarma, este reloj será mostrado por medio de una pantalla LCD Nokia 5110. Utilizando la librería de FreeRTOS se genera el funcionamineto del reloj por medio de tareas con diferentes prioridades.
 
-![Figura 1  Estructura de Favipiravir-RTP en su forma activa](https://user-images.githubusercontent.com/78750648/130305434-651375f0-fd4f-4aa3-8b71-2434fd5ec6a6.png)
+![2](https://user-images.githubusercontent.com/78750648/131061861-4aa66916-65c5-448b-9d08-9eb4e4e324d4.JPG)
 
-*Figura 1. Estructura de Favipiravir-RTP en su forma activa*
+*Figura 1. Diagrama de bloques*
 
 Favipiravir es un profármaco inicialmente utilizado en casos de influenza resistentes al tratamiento convencional. Este es convertido a su forma activa Favipiravir-RTP tal como se vio anteriormente en la Figura 1, tras una ribosilación y fosforilación intracelular, que inhibe la ARN polimerasa dependiente de ARN (RdRp), tal como se muestra en la Figura 2 mediante competencia con los nucleótidos de purina, previniendo la replicación del genoma viral, así como la formación de nuevos viriones (Esquema 1). El dominio catalítico de la RdRp se encuentra bien conservado entre los virus de ARN, por lo tanto, es posible que este antiviral tenga efecto sobre el sitio catalítico de la RdRp del SARS-CoV-2.
 
