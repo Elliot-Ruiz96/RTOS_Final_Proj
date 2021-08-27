@@ -54,9 +54,7 @@ Son los archivos utilziados originalmente, no hay cambios importantes en este he
 
 ## **4. Conclusiones**
 
-## **5. Bibliografía**
-
-![237785289_1312303532555244_6905168508972581288_n](https://user-images.githubusercontent.com/78750648/131064272-a7f0e32f-1a90-4e3c-a59c-b140c4c4abd4.png)
+Este proyecto da una idea muy básica de como funcionan estos códigos en las aplicaciones reales. Algo muy importante por mencionar es que siempre habrán defectos, pero estos siempre se podrán minimizar conforme el usuario/desarrollador vaya tomando experiencia y se usen metodologías buenas para el diseño junto conm metodologías de calidad.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
