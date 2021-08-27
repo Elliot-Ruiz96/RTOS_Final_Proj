@@ -1,6 +1,8 @@
 # **RTOS Final Project: Clock**
 
-**PARA VER LA VERSIÓN EN PÁGINA IR A LA RAMA gh-pages**
+**PARA VER LA VERSIÓN EN PÁGINA CLICKEAR AQUÍ**
+
+https://elliot-ruiz96.github.io/RTOS_Final_Proj/
 
 Espinosa-Hernández S. Hurtado-Solórzano J.A. Ruiz-Sánchez E.
 
