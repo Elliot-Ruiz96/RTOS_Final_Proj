@@ -38,7 +38,7 @@ Línea 89 - Línea 97: Creación de la tarea Idle junto con las otras 5, ademas 
 
 ### *2.2 freertos_spi.c*
 
-Por medio de la plataforma SwissParam, se obtuvieron los archivos necesarios para realizar la dinámica molecular, para su posterior ejecución empleando Gromacs 2021 GPU mediante la plataforma Google Colab donde se efectuaron los pasos necesarios para el acondicionamiento y subsiguiente análisis de dinámica molecular.
+
 
 ### *2.3 freertos_spi.h*
 
