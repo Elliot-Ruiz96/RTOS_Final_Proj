@@ -1,0 +1,13 @@
+
+*.o
+.settings/language.settings.xml
+*.xml
+*.d
+*.xml
+*.su
+*.mk
+*.axf
+Debug/makefile
+*.map
+*.ld
+*.xml
