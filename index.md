@@ -93,7 +93,3 @@ Son los archivos utilziados originalmente, no hay cambios importantes en este he
 Este proyecto da una idea muy básica de como funcionan estos códigos en las aplicaciones reales. Algo muy importante por mencionar es que siempre habrán defectos, pero estos siempre se podrán minimizar conforme el usuario/desarrollador vaya tomando experiencia y se usen metodologías buenas para el diseño junto con metodologías de calidad.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-TEST
-
-[![Watch the video](https://img.youtube.com/vi/6DeDzsCGbsQ/maxresdefault.jpg)](https://youtu.be/6DeDzsCGbsQ)
