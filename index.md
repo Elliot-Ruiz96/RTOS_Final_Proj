@@ -1,7 +1,5 @@
 # **RTOS Final Project: Clock**
 
-https://elliot-ruiz96.github.io/RTOS_Final_Proj/
-
 Hernández-Romero B. Ruiz-Sánchez E.
 
 **Centro de Investigación y de Estudios Avanzados del IPN. Zapopán, Jal, México.**
