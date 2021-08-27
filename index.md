@@ -70,7 +70,7 @@ Línea 295 - Línea 316:  Conversión de entero a ASCII;
                         Recordar que un char es solo un entero sin signo
                         Se toma la siguiente tabla para generar la conversión:
                         
-![237785289_1312303532555244_6905168508972581288_n](https://user-images.githubusercontent.com/78750648/131067639-420a61ba-28ec-40f8-9a33-041c9789b14b.png)
+![3](https://user-images.githubusercontent.com/78750648/131067708-17735ea8-e202-47d1-ad0b-44b4f5cfe3cb.JPG)
 
 ### *2.5 RTOS_FProject.h*
 
