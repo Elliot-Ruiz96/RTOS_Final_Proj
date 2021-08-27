@@ -4,9 +4,9 @@
 
 https://elliot-ruiz96.github.io/RTOS_Final_Proj/
 
-Espinosa-Hernández S. Hurtado-Solórzano J.A. Ruiz-Sánchez E.
+Hernández-Romero B. Ruiz-Sánchez E.
 
-**Benemérita Universidad Autónoma de Puebla. Pue,Pue,México; Universidad Michoacana de San Nicolás de Hidalgo. Morelia, Mich, México; Centro de Investigación y de Estudios Avanzados del IPN. Zapopán, Jal, México.**
+**Centro de Investigación y de Estudios Avanzados del IPN. Zapopán, Jal, México.**
 
 ## **1. Introducción**
 
