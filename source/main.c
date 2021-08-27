@@ -75,6 +75,7 @@ int main(void) {
     xEventGroup = xEventGroupCreate();
 
     time_queue = xQueueCreate(QUEUE_SIZE, sizeof(time_msg_t*));
+
     vQueueAddToRegistry(time_queue, "Time Queue");
 
     static const alarm_time_t alarm = {.second = ALARM_SEC, .minute = ALARM_MIN, .hour = ALARM_HOUR};
