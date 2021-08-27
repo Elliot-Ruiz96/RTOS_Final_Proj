@@ -20,7 +20,7 @@ El codigo fue generado con la herramienta MCUxpreso IDE v.11.3.1 para la tarjeta
 
 Línea 33 - Línea 52: Mandamos llamar todas las librerías de drives que se utilizarán para el proyecto. 
 
-Línea 55 - Línea 59: Declaramos las estrucutruas a utilizar con nombres convenientes
+Línea 55 - Línea 59: Declaramos las estrucutruas a utilizar con nombres convenientes.
 
 Línea 61 - Línea 71: Utilización de código genérico para funcionamiento de RTOS en el tarjeta.
 
@@ -44,7 +44,45 @@ Línea 89 - Línea 97: Creación de la tarea Idle junto con las otras 5, ademas 
 
 
 
-### *2.4 nokiaLCD.h Y nokiaLCD.c*
+### *2.4 RTOS_FProject.c*
+
+Línea 45 - Línea 92:  Funcionamiento de toda la tarea de segundos;
+                      Pone la base de tiempo para la ejecución de todo el proyecto, para el funcaionamiento del semáforo entre horas, mins y segs.
+                      Dentro está la validación para la ejecución de la alarma, el regresar la variable a 0 cada que llegue a 59.
+                      
+Línea 94 - Línea 133:   Funcionamiento de toda la tarea de minutos;
+                        Es un proceso similar a la tarea anterior, cada que termine la tarea anterior (segundos) el semáforo da paso a los minutoa
+                        Dentro está la validación para la ejecución de la alarma, el regresar la variable a 0 cada que llegue a 59.                      
+
+Línea 135 - Línea 173:  Funcionamiento de toda la tarea de horas;
+                        Es un proceso similar a la tarea anterior, cada que termine la tarea anterior (minutos) el semáforo da paso a las horas
+                        Dentro está la validación para la ejecución de la alarma, el regresar la variable a 0 cada que llegue a 23 (cada que los tres eventos sean completados) 
+                          
+Línea 175 - Línea 246:  Funcionamiento de toda la tarea de segundos;
+                        Creación de banderas para el encendido y pagado de la pantalla
+                        Validación de los tres eventos para que el semáforo deje pasar a la tarea, con la bandera blacklight se genera el apago y encendido de la pantalla.
+                        Recordar siempre usar el UpdateDisplay para mostrar en la pantalla.
+                        
+Línea 148 - Línea 293:  Funcionamiento de la impresión del reloj digital;
+                        Se tendran 9 valores en un solo arreglo para mostrar los 6 números, los dos puntos y uno adicional en la última posición
+                        
+Línea 295 - Línea 316:  Conversión de entero a ASCII;
+                        Recordar que un char es solo un entero sin signo
+                        Se toma la siguiente tabla para generar la conversión:
+                        
+![237785289_1312303532555244_6905168508972581288_n](https://user-images.githubusercontent.com/78750648/131067639-420a61ba-28ec-40f8-9a33-041c9789b14b.png)
+
+### *2.5 RTOS_FProject.h*
+
+Línea 24 - Línea 39: Definimos MACRSO para los bits, inicialización del reloj, config de la alarma y el "tiempo en que prende y apaga la pantalla"
+
+Línea 43 - Línea 56: Definición de las estrucuturas
+
+Línea 60 - Línea 65: Definición de todas las task a usar
+
+Línea 68: Conversión de entero a tipo ASCII
+
+### *2.6 nokiaLCD.h Y nokiaLCD.c*
 
 Son los archivos utilziados originalmente, no hay cambios importantes en este header ni source.
 
