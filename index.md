@@ -12,35 +12,41 @@ El codigo fue generado con la herramienta MCUxpreso IDE v.11.3.1 para la tarjeta
 
 ![2](https://user-images.githubusercontent.com/78750648/131061861-4aa66916-65c5-448b-9d08-9eb4e4e324d4.JPG)
 
-*Figura 1. Diagrama de bloques*
+*Figura 1. Diagrama de bloques* 
 
-Favipiravir es un profármaco inicialmente utilizado en casos de influenza resistentes al tratamiento convencional. Este es convertido a su forma activa Favipiravir-RTP tal como se vio anteriormente en la Figura 1, tras una ribosilación y fosforilación intracelular, que inhibe la ARN polimerasa dependiente de ARN (RdRp), tal como se muestra en la Figura 2 mediante competencia con los nucleótidos de purina, previniendo la replicación del genoma viral, así como la formación de nuevos viriones (Esquema 1). El dominio catalítico de la RdRp se encuentra bien conservado entre los virus de ARN, por lo tanto, es posible que este antiviral tenga efecto sobre el sitio catalítico de la RdRp del SARS-CoV-2.
+## **2. Descripción del código**
 
-![Figura 2  Estructura de la ARN polimerasa dependiente de ARN (RdRp)](https://user-images.githubusercontent.com/78750648/130305576-ca10e71c-c530-47c2-b5b1-a3be3ef9c9b3.png)
+### *2.1  main.c*
 
-*Figura 2. Estructura de la ARN polimerasa dependiente de ARN (RdRp)*
+Línea 33 - Línea 52: Mandamos llamar todas las librerías de drives que se utilizarán para el proyecto. 
 
-![Esquema 1  Proceso de inhibición de RdRp por Favipiravir-RTP](https://user-images.githubusercontent.com/78750648/130305619-9e6138c9-8e57-4dcf-999f-1e1cb07d9259.png)
+Línea 55 - Línea 59: Declaramos las estrucutruas a utilizar con nombres convenientes
 
-*Esquema 1. Proceso de inhibición de RdRp por Favipiravir-RTP*
+Línea 61 - Línea 71: Utilización de código genérico para funcionamiento de RTOS en el tarjeta.
 
-El análisis de acoplamiento molecular (molecular docking) permite buscar la mejor conformación y posición de un ligando dentro de un receptor, por ejemplo, una enzima (Saldívar et al. 2016), mediante el estudio de las fuerzas de unión entre ambas estructuras; el acoplamiento molecular se ha convertido en una herramienta esencial para el descubrimiento y reposicionamiento de fármacos (Ferreira et al., 2015). La unión entre un fármaco (F) y su receptor (R) está descrita por la constante de asociación (ecuación 1), siendo ésta una reacción de asociación simple, mientras más alta sea la constante, mayor es la energía liberada en la interacción del receptor y el fármaco, dependiendo de la afinidad de unión del complejo ligando-receptor (Ferreira et al. 2015).
+Línea 73 - Línea 77: Manipulador de funciones
 
-![Ec1](https://user-images.githubusercontent.com/78750648/130305689-88b3e5d2-05cf-4e11-a71e-91fef89c6f49.JPG)
+Línea 79: Añadir registro de tiempo a la cola
 
-Para poder realizar el acoplamiento molecular es necesario contar con la estructura tridimensional del ligando y del receptor, dichas estructuras pueden ser obtenidas a partir del Protein Data Bank (PDB). En este trabajo se realiza el acoplamiento de Favipiravir, posible fármaco para tratar la enfermedad ocasionada por SARS-CoV-2, a partir de la interacción del sitio activo (residuos D760 y D761) (Poner el VÍDEO residuos)  (Hillen, H. et al. 2020) de la RdRp y el Favipiravir-RTP. 
+Línea 81: Definir la estrucutura de la alarma
 
-## **2. Metodología**
+Línea 83 - Línea 77: Creación de MACROS y se añaden los registros a las colas
 
-### *2.1  Análisis de acoplamiento molecular in silico*
+Línea 89 - Línea 97: Creación de la tarea Idle junto con las otras 5, ademas de sus proridades respectivas (donde la tarea "horas" es la más importante de estas cinco)
 
-Se realizó el acoplamiento molecular a partir de la estructura cristalina de RdRp obtenida a partir del Protein Data Bank (PDB) con el código 7BW4 y el fármaco Favipiravir-RTP obtenido de PubChem con el CID 5271809. Posteriormente se editaron las moléculas con el programa PyMOL eliminando las estructuras que no se requieren.
+Últimas líneas de código: Apagado y encendido de la luz de fondo de la pantalla.
 
-Una vez realizada la edición de la proteína y el fármaco a evaluar se procedió a añadir la carga e hidrógenos polares a la RdRp en el programa AutoDock Tools y se convirtió en formato .pdbqt; el Favipiravir-RTP se convirtió al mismo formato. Por último, se introdujeron los comandos correspondientes en símbolo del sistema (cdm) y con ayuda del programa Vina (O. Trott, 2010) se desarrolló el acoplamiento. 
-
-### *2.2 Análisis de la dinámica molecular*
+### *2.2 freertos_spi.c*
 
 Por medio de la plataforma SwissParam, se obtuvieron los archivos necesarios para realizar la dinámica molecular, para su posterior ejecución empleando Gromacs 2021 GPU mediante la plataforma Google Colab donde se efectuaron los pasos necesarios para el acondicionamiento y subsiguiente análisis de dinámica molecular.
+
+### *2.3 freertos_spi.h*
+
+
+
+### *2.4 nokiaLCD.h Y nokiaLCD.c*
+
+Son los archivos utilziados originalmente, no hay cambios importantes en este header ni source.
 
 ## **3. Resultados y discusión**
 
