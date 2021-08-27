@@ -58,9 +58,10 @@ void seconds_task (void* pvParameters)
 	*sMsg = secondsMsg;
 	xQueueSend(time_queue, &sMsg, portMAX_DELAY);
 
+	xLastWakeTime = xTaskGetTickCount();
+
 	for(;;)
 	{
-		xLastWakeTime = xTaskGetTickCount();
 
 		if(alarm.second == seconds)
 		{
@@ -184,9 +185,10 @@ void alarm_task (void* pvParameters)
 	uint8_t alarmString [] = "ALARM!";
 	uint8_t alarmClear [] =  "      ";
 
+	xLastWakeTime = xTaskGetTickCount();
+
 	for(;;)
 	{
-		xLastWakeTime = xTaskGetTickCount();
 		/*
 		 * xEventGroupWaitBits(
 		 * 		Event group to read,
